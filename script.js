@@ -22,10 +22,10 @@ const mainFn = ()=>{
     sections.forEach((section,i)=>{
         if(window.pageYOffset>=section.offsetTop 
             + 15){
-            navbarLinks.forEach(navbarLink =>{
+            navbarLinks(navbarLink =>{
                 navbarLink.classList.remove('change');
             });
-            navbarlink[i].classList.add
+            navbarLinks[i].classList.add
             ('change');
         }
     });
@@ -43,7 +43,7 @@ function getNow(){
     dd=dd< 10? "0" + dd : dd;
     let stringDate = mm + "/" + dd + "/" + yyyy;
     return stringDate;
-}
+};
  function hiddenotherOptions(){
      let formoption1 = document.querySelector('.formoption1');
      let formoption2 = document.querySelector('.formoption2');
