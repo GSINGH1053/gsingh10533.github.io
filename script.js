@@ -8,6 +8,11 @@ const sections=document.querySelectorAll("section");
 const navbarLinks=document.querySelector(".navbar-link");
 
 window.addEventListener("scroll",()=>{
+    mainFn();
+    navbar();
+});
+
+const mainFn = ()=>{
     if(window.pageYOffset>= navbar.offsetTop){
         navbar.classList.add("sticky");
     }else{
@@ -24,8 +29,8 @@ window.addEventListener("scroll",()=>{
             ('change');
         }
     });
- });
-mainfunction();
+ };
+mainFn();
 window.addEventListener("resize",()=>{
     window.location.reload();
 });
